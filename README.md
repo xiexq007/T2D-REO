@@ -19,9 +19,9 @@
 
 ## Usage
 
-- The trained model was saved in the **model/svm_model.joblib**. 
+- The trained model was saved in the **model/svm_model.joblib**, please install the required modules: scikit-learn, joblib.
 - You can use the provided example **(example/example_x)** for testing.
-- For predictions of your own instance data, please process the data in the format of example_x (containing 15 key gene pairs) using the provided 'feature encoding' code
+- For predictions of your own instance data, please process the data in the format of example_x (containing 15 key gene pairs) using the provided **code/feature encoding** code.
 
 #### Example
 ```
