@@ -14,7 +14,7 @@
 2.  **MIC, ANOVA, and mRMR** were applied to get the rankings of overlapped gene pairs in three training data subsets.
 3.  By weighting its ranking in three training data subsets, we got the ranking of each gene pair in the whole training dataset.
 4.  Four common classification algorithms-based models were constructed and compared to select the optimal model **(SVM-based model)**.
-5.  Further **feature screening and parameter tuning** were implemented, the **top 15 gene pairs** selected by **mRMR** method were the optimal feature subset.
+5.  Further **feature screening and parameter tuning** were implemented, the **top 15 gene pairs** selected by **mRMR** were the optimal feature subset.
 6.  Based on **15 gene pairs and SVM**, the final model was constructed.
 
 ## Usage
