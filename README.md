@@ -1,33 +1,35 @@
-# T2D-REO
+# T2D-REOs
 
 ## What
 
-- This is a intelligent model using the within-sample relative expression ordering of gene (REO) to predict the risk of type 2 diabetes (T2D).
-- The proposed model has an encouraging predictive power on both training **(AUC = 0.981)** and independent testing data **(AUC = 0.847)**.
+- This is a novel data analysis approach based on the within-sample relative expression orderings of genes (REOs) and machine learning to characterize the transcriptomic differences between T2D and the healthy pancreatic islets.
+- The proposed method can efficiently integrate data from divergent gene expression data sets and help discover some potential disease-specific signatures.
+- Biomarkers (reverse REOs) found using this method have excellent predictive performance in predicting the occurrence of T2D on both training **(AUC = 0.896)** and independent testing data **(AUC = 0.863)**.
+- These signatures can help elucidate the underlying pathogenic mechanisms of T2D.
 
 ## How
 
 #### Datasets
-- Bulk pancreas islet expression profiles (GSE76895, GSE41762, GSE164416).
+- Three divergent bulk pancreatic islet expression profiles (GSE76894, GSE164416, GSE54279).
 #### Method
-1.  Reversal gene pairs were identified from three traning data subsets based on **REO** strategy, and obtained the overlapped gene pairs.
-2.  **MIC, ANOVA, and mRMR** were applied to get the rankings of overlapped gene pairs in three training data subsets.
-3.  By weighting its ranking in three training data subsets, we got the ranking of each gene pair in the whole training dataset.
+1.  The overlapped reverse REOs were identified from three islets traning data subsets.
+2.  **MIC, ANOVA, and mRMR** were applied to get the rankings of overlapped REOs.
 4.  Four common classification algorithms-based models were constructed and compared to select the optimal model **(SVM-based model)**.
-5.  Further **feature screening and parameter tuning** were implemented, the **top 15 gene pairs** selected by **mRMR** were the optimal feature subset.
-6.  Based on **15 gene pairs and SVM**, the final model was constructed.
+5.  Further **feature screening and parameter tuning** were implemented, the **top 21 REOs** selected by **mRMR** were the optimal feature subset.
+6.  Based on **21 REOs and SVM**, the model with excellent predictive power was constructed.
 
 ## Usage
 
 - The trained model was saved in the **model/svm_model.joblib**, please install the required modules: scikit-learn, joblib.
-- You can use the provided example **(example/example_x)** for testing.
-- For predictions of your own instance data, please process the data in the format of example_x (containing 15 key gene pairs) using the provided **code/feature encoding** code.
+- You can use the provided example **(example/x_example)** for testing.
+- For predictions of your own instance data, please process the data in the format of x_example (containing 21 key REOs) using the provided **code/feature encoding** code.
 
 #### Example
 ```
 from joblib import load
 model = load('model/svm_model.joblib')
-example_y_pred = model.predict(example_x)
+y_example_pred = model.predict(x_example)
+y_example_proba = model.predict_proba(x_example)
 ```
 
 
