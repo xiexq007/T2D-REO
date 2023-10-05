@@ -10,7 +10,7 @@
 ## How
 
 #### Datasets
-- Three divergent bulk pancreatic islet expression profiles (GSE76894, GSE164416, GSE54279).
+- Three divergent bulk pancreatic islets expression profiles (GSE76894, GSE164416, GSE54279).
 #### Method
 1.  The overlapped reverse REOs were identified from three islets traning data subsets.
 2.  **MIC, ANOVA, and mRMR** were applied to get the rankings of overlapped REOs.
