@@ -13,7 +13,7 @@
 - Three divergent bulk pancreatic islets expression profiles (GSE76894, GSE164416, GSE54279).
 #### Method
 1.  The overlapped reverse REOs were identified from three islets traning data subsets.
-2.  **MIC, ANOVA, and mRMR** were applied to get the rankings of overlapped REOs.
+2.  **MIC, ANOVA, and mRMR** were applied to get the rankings of overlapped reverse REOs.
 4.  Four common classification algorithms-based models were constructed and compared to select the optimal model **(SVM-based model)**.
 5.  Further **feature screening and parameter tuning** were implemented, the **top 21 REOs** selected by **mRMR** were the optimal feature subset.
 6.  Based on **21 REOs and SVM**, the model with excellent predictive power was constructed.
