@@ -22,7 +22,7 @@
 
 - The trained model was saved in the **model/svm_model.joblib**, please install the required modules: scikit-learn, joblib.
 - You can use the provided example **(example/x_example)** for testing.
-- For predictions of your own instance data, please process the data in the format of x_example (containing 21 key REOs) using the provided **code/feature encoding** code.
+- For predictions of your own instance data, please process the data into the format of x_example (containing 21 key REOs) using the provided **code/feature encoding** code.
 
 #### Example
 ```
