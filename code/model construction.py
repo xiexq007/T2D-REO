@@ -13,7 +13,7 @@ def svm(x_train, y_train, feature_subset):
     y_np = np.array(y_train)
     
     kf = KFold(n_splits=3,shuffle=True,random_state=42)
-    svm_model = SVC(C=0.03125,kernel="rbf",gamma=0.03125,probability=True,random_state=42)
+    svm_model = SVC(C=0.5,kernel="rbf",gamma=0.03125,probability=True,random_state=42)
 
     true_labels = []
     pre_labels = []

@@ -26,5 +26,5 @@ def ifs(feature_list, x_train, y_train):
         print("The best parameter is:",svm_grid.best_params_)
         print("The 3 CV AUC is:",svm_grid.best_score_)
         
-    ifs = pd.DataFrame({"Feature_num":range(1,76,1),"Parameter": hyperparameter_list, "AUC":auc_list})
+    ifs = pd.DataFrame({"Feature_num":range(1,12,1),"Parameter": hyperparameter_list, "AUC":auc_list})
     return ifs
