@@ -14,7 +14,7 @@
 #### Method
 1.  The overlapped reverse REOs were identified from three islets traning data subsets.
 2.  **MIC, ANOVA, and mRMR** were applied to get the rankings of overlapped reverse REOs.
-4.  Four common classification algorithms-based models were constructed and compared to select the optimal model **(SVM-based model)**.
+4.  Four classification algorithms-based models were constructed and compared to select the optimal model **(SVM-based model)**.
 5.  Further **feature screening and parameter tuning** were implemented, the **top 7 REOs** selected by **mRMR** were the optimal feature subset.
 6.  Based on **7 reverse REOs and SVM**, the model with excellent predictive power was constructed.
 
