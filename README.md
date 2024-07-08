@@ -18,19 +18,3 @@
 5.  Further **feature screening and parameter tuning** were implemented, the **top 7 REOs** selected by **mRMR** were the optimal feature subset.
 6.  Based on **7 reverse REOs and SVM**, the model with excellent predictive power was constructed.
 
-## Usage
-
-- The trained model was saved in the **model/svm_model.joblib**, please install the required modules: scikit-learn, joblib.
-- You can use the provided example **(example/x_example)** for testing.
-- For predictions of your own instance data, please process the data into the format of x_example (containing 7 reverse REOs) using the provided **code/feature encoding** code.
-
-#### Example
-```
-from joblib import load
-model = load('model/svm_model.joblib')
-y_example_pred = model.predict(x_example)
-y_example_proba = model.predict_proba(x_example)
-```
-
-
-
