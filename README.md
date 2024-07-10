@@ -18,3 +18,13 @@
 5.  Further **feature screening and parameter tuning** were implemented, the **top 7 REOs** selected by **mRMR** were the optimal feature subset.
 6.  Based on **7 reverse REOs and SVM**, the model with excellent predictive power was constructed.
 
+## Raw data
+#### Raw files of data analyzed in this manuscript were originally retrieved from:
+1. GEO accession number [GSE76894](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76894) (Solimena et al., 2018)
+2. GEO accession number [GSE164416](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164416) (Wigger et al., 2021)
+3. GEO accession number [GSE54279](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54279) (Krus et al., 2014)
+4. GEO accession number [GSE86468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE86468) (Lawlor et al., 2017)
+5. GEO accession number [GSE118139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE118139) (Wang et al., 2019)
+6. GEO accession number [GSE184050](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184050) (Chen et al., 2022)
+7. GEO accession number [GSE78721](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE78721) (Tiwari et al., 2018)
+8. GEO accession number [GSE153855](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE153855) (Ngara & Wierup, 2022)
